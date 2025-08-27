@@ -1,0 +1,61 @@
+{
+    "model_requirements": {
+        "description": "Sample configuration for flood prediction models",
+        "required_files": [
+            "best_flood_model.pkl"
+        ],
+        "note": "Only the main model file is required! No additional files needed.",
+        "expected_features": [
+            "dem",
+            "dem_filled_direction",
+            "ndvi",
+            "slope", 
+            "aspect",
+            "flow_accumulation",
+            "twi",
+            "spi",
+            "dem_filled"
+        ],
+        "model_types_supported": [
+            "Random Forest",
+            "SVM", 
+            "XGBoost",
+            "MLP",
+            "AdaBoost"
+        ]
+    },
+    "data_requirements": {
+        "coordinate_system": "Any projected coordinate system",
+        "layer_types": {
+            "raster": [
+                "DEM (Digital Elevation Model)",
+                "Slope (degrees)",
+                "Aspect (degrees)", 
+                "TWI (Topographic Wetness Index)",
+                "SPI (Stream Power Index)",
+                "NDVI (Normalized Difference Vegetation Index)",
+                "Flow Accumulation"
+            ],
+            "vector": [
+                "Polygon layers with attributes",
+                "Point layers with measurements",
+                "Line layers with flow characteristics"
+            ]
+        }
+    },
+    "output_format": {
+        "prediction": "Binary classification (0: No Flood, 1: Flood Risk)",
+        "probability": "Float value between 0.0 and 1.0", 
+        "visualization": "Color-coded point on map (Red: High Risk, Green: Low Risk)"
+    },
+    "example_workflow": [
+        "1. Load DEM, slope, aspect, TWI, SPI layers into QGIS",
+        "2. Open Flood Prediction Plugin",
+        "3. Select point of interest on map",
+        "4. Choose relevant layers for data extraction", 
+        "5. Load trained ML model (.pkl file)",
+        "6. Extract data from layers at selected point",
+        "7. Make flood risk prediction",
+        "8. View results in plugin interface and on map"
+    ]
+}
