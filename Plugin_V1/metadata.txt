@@ -8,12 +8,12 @@ qgisMinimumVersion=3.0
 description=A QGIS plugin for flood risk prediction using machine learning models. Allows users to select points, extract layer data, and predict flood probability.
 version=1.5.0
 author=Krushna Parmar
-email=krushna.parmar@example.com
+email=contact@krushnaparmar.dev
 
 about=This plugin enables flood risk assessment by combining GIS data with machine learning models. Users can select points on the map, choose relevant layers (DEM, slope, aspect, TWI, SPI, etc.), and use pre-trained ML models to predict flood probability at selected locations. The plugin supports various data visualization features and model attribute matching.
 
-tracker=https://github.com/krushnaparmar/flood-prediction-plugin
-repository=https://github.com/krushnaparmar/flood-prediction-plugin
+tracker=https://github.com/Krushna-007/QGIS_flood_prediction_plugin/issues
+repository=https://github.com/Krushna-007/QGIS_flood_prediction_plugin
 # End of mandatory metadata
 
 # Recommended items:
@@ -25,7 +25,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags=flood, prediction, machine learning, ML, risk assessment, hydrology, DEM, GIS analysis
 
-homepage=https://github.com/krushnaparmar/flood-prediction-plugin
+homepage=https://github.com/Krushna-007/QGIS_flood_prediction_plugin
 category=Plugins
 icon=icon.png
 # experimental flag

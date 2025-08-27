@@ -8,7 +8,7 @@
                              -------------------
         begin                : 2024-08-26
         copyright            : (C) 2024 by Krushna Parmar
-        email                : krushna.parmar@example.com
+        email                : contact@krushnaparmar.dev
         git sha              : $Format:%H$
  ***************************************************************************/
 
